@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  projetopg:
+    image: postgres:alpine
+    ports:
+      - '5432:5432'
+    container_name: 'projetopg'
+    restart: always
+    volumes:
+      - projetopg-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: useraula
+      POSTGRES_PASSWORD: passwordaula
+
+volumes:
+    projetopg-data:
