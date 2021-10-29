@@ -10,8 +10,8 @@ services:
     volumes:
       - projetopg-data:/var/lib/postgresql/data
     environment:
-      POSTGRES_USER: pguser
-      POSTGRES_PASSWORD: pgpassword
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
 
 volumes:
   projetopg-data:
